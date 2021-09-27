@@ -1,0 +1,9 @@
+L = list()
+valor = float(input())
+
+while (valor != 0):
+    L.append(valor)
+    valor = float(input())
+    
+for item in L:
+    print(item)
