@@ -1,0 +1,12 @@
+Total = 0
+R = 0
+N = int(input())
+
+while N > 0:
+    R = float(input())
+    if (R > 0):
+        Total = Total + R
+    else: Total = Total
+    N = N-1
+    
+print("Soma dos valores: {}".format(Total))
