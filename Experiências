@@ -1,0 +1,32 @@
+N = int(input())
+contador = 0
+coelhos = 0
+ratos = 0
+sapos = 0
+total_cobaias = 0
+
+while (contador<N):
+    qtd_cobaias, tipo_cobaia = input().split(" ")
+    qtd_cobaias = int(qtd_cobaias)
+    if ((qtd_cobaias >= 1) & (qtd_cobaias <=15)):
+        if (tipo_cobaia == 'C'):
+            coelhos = coelhos + qtd_cobaias
+        elif (tipo_cobaia == 'S'):
+            sapos = sapos + qtd_cobaias
+        elif (tipo_cobaia == 'R'):
+            ratos = ratos + qtd_cobaias
+        else: break
+    total_cobaias = total_cobaias + qtd_cobaias
+    contador = contador + 1
+
+percentual_coelhos = (coelhos/total_cobaias)*100
+percentual_sapos = (sapos/total_cobaias)*100
+percentual_ratos = (ratos/total_cobaias)*100
+
+print("Total: {} cobaias".format(total_cobaias))
+print("Total de coelhos: {}".format(coelhos))
+print("Total de ratos: {}".format(ratos))
+print("Total de sapos: {}".format(sapos))
+print("Percentual de coelhos: {:.2f} %".format(percentual_coelhos))
+print("Percentual de ratos: {:.2f} %".format(percentual_ratos))
+print("Percentual de sapos: {:.2f} %".format(percentual_sapos))
