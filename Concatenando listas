@@ -1,0 +1,21 @@
+L = [i for i in range(10)]
+J = [j for j in range(10)]
+K = [k for k in range(20)]
+
+for i in range(10):
+    valor = int(input())
+    L[i] = valor
+    i = i + 1
+
+for j in range(10):
+    valor = int(input())
+    J[j] = valor
+    j = j + 1
+
+k = 0
+while (k<10):
+    K[k] = L[k]
+    K[k+10] = J[k]
+    k = k + 1
+
+print(K)
