@@ -1,0 +1,20 @@
+N = int(input())
+valor_1 = 0
+valor_2 = 0
+valor_3 = 0
+contador = 0
+lista_media = []
+
+while (contador < N):
+    valor_1, valor_2, valor_3 = input().split(" ")
+    valor_1 = float(valor_1)
+    valor_2 = float(valor_2)
+    valor_3 = float(valor_3)
+    media = (2*(valor_1) + 3*(valor_2) + 5*(valor_3))/10
+    lista_media.insert(contador, media)
+    contador = contador + 1
+    
+contador = 0
+while (contador < N):
+    print("{:.1f}".format(lista_media[contador]))
+    contador = contador + 1
