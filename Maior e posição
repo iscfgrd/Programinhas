@@ -1,0 +1,16 @@
+n = 0
+posicao = 0
+maior = 0
+contador = 0
+guarda_posicao = 0
+
+while (contador < 100):
+    posicao = posicao + 1
+    n = int(input())
+    if (n > maior):
+        guarda_posicao = posicao
+        maior = n
+    else: pass
+    contador = contador + 1
+    
+print("{}\n{}".format(maior,guarda_posicao))
