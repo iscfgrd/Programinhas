@@ -1,0 +1,13 @@
+L = [i for i in range(10)]
+J = [j for j in range(10)]
+i = 0
+j = 0
+
+for i in range(10):
+    valor = float(input())
+    L[i] = valor
+    j = 9 - i
+    J[j] = valor
+    i = i + 1
+    
+print(J)
