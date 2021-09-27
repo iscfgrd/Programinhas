@@ -1,0 +1,13 @@
+a = float(input("Digite o valor de a: "))
+b = float(input("Digite o valor de b: "))
+c = float(input("Digite o valor de c: "))
+
+delta = ((b**2)-(4*a*c))
+primeiraraiz = (-b)+(delta**(1/2))
+segundaraiz = (-b)-(delta**(1/2))
+
+if (delta==0):
+	print("A raiz dessa equação é: {}".format(primeiraraiz))
+elif (delta>0):
+	print("As raízes dessa equação são: {} e {}".format(primeiraraiz, segundaraiz))
+else: print("Não há raízes reais para esta equação")
