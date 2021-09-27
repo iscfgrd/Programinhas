@@ -1,0 +1,19 @@
+salario_atual = float(input())
+if (salario_atual >= 0) and (salario_atual <= 400):
+    ajuste = 0.15
+elif (salario_atual > 400) and (salario_atual <= 800):
+    ajuste = 0.12
+elif (salario_atual > 800) and (salario_atual <= 1200):
+    ajuste = 0.10
+elif (salario_atual > 1200) and (salario_atual <= 2000):
+    ajuste = 0.07
+else:
+    ajuste = 0.04
+    
+salario_ajustado = (salario_atual * (1+ajuste))
+ajuste_percentual = int(ajuste * 100)
+reajuste_ganho = (salario_ajustado - salario_atual)
+
+print("Novo salario: {:.2f}".format(salario_ajustado))
+print("Reajuste ganho: {:.2f}".format(reajuste_ganho))
+print("Em percentual: {} %".format(ajuste_percentual))
