@@ -1,0 +1,14 @@
+N = int(input())
+P = int(input())
+R = int(input())
+TermoPg = 0
+String = ""
+Total = 0
+
+while N > 0:
+    TermoPg = (P*(R**(N-1)))
+    Total = Total + TermoPg
+    String = (str(TermoPg) + " ") + String
+    N = N-1
+    
+print("{}\nSoma dos termos: {}".format(String, Total))
