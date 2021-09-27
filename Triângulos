@@ -1,0 +1,11 @@
+a = float(input("Digite o valor de a: "))
+b = float(input("Digite o valor de b: "))
+c = float(input("Digite o valor de c: "))
+
+if (a>(b+c)) or (b>(a+c)) or (c>(a+b)):
+	print("Os valores de a, b e c não constituem o lado de um triângulo")
+elif ((a == b) and (b == c) and (a == c)):
+	print("Os valores de a, b e c constituem o lado de um triângulo e este é um triângulo equilátero")
+elif ((a != b) and (a != c) and (b != c)):
+	print("Os valores de a, b e c constituem o lado de um triângulo e este é um triângulo escaleno")
+else: print("Os valores de a, b e c constituem o lado de um triângulo e este é um triângulo isósceles")
