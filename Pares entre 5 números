@@ -1,0 +1,11 @@
+contador = 1
+par = 0
+
+while (contador <= 5):
+    n = float(input())
+    if (n % 2 == 0):
+        par = par + 1
+    else: pass
+    contador = contador + 1
+
+print("{} valores pares".format(par))
